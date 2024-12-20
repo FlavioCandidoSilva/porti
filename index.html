@@ -16,153 +16,375 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Blog - Portfolio</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
+    <section class="br">
+        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+            <div class="container">
+                <a class="logo" href="#">Blog - Portfólio</a>
+                <ul class="nav">
+                    <li class="item">
+                        <a class="link" href="#home">Início</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#about">Sobre</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#contact">Contato</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" onclick="mudarIdioma('br')" href="#br">Português</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" onclick="mudarIdioma('en')"  href="#en">Inglês</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </div>
+        </nav><!-- Fim da Navegação da Página -->
 
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Flávio Policarpo</span>
-                <span class="up">Systems Analyst and Developer</span>
-            </h1>
-            <p class="header-subtitle"></p>
+        <!-- Cabeçalho da página -->
+        <header id="home" class="header">
+            <div class="overlay"></div>
+            <div class="header-content container">
+                <h1 class="header-title">
+                    <span class="up">OLÁ!</span>
+                    <span class="down">Eu sou Flávio Policarpo</span>
+                    <span class="up">Analista de Sistemas e Desenvolvedor</span>
+                </h1>
+                <p class="header-subtitle"></p>
 
-            <a href="https://github.com/FlavioCandidoSilva" class="btn btn-primary">Visit My Works</a>
-        </div>
-    </header><!-- end of page header -->
+                <a href="https://github.com/FlavioCandidoSilva" class="btn btn-primary">Visite meus Trabalhos</a>
+            </div>
+        </header><!-- Fim do cabeçalho da página -->
 
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/flavio.png" class="about-img"
-                        alt="Flávio policarpo">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hello, I'm Flávio Policarpo, a professional graduated in Analysis and Systems Development from the renowned institution IFRN. With a solid educational foundation, I have been dedicated to honing my skills in the field of technology, with a special focus on software development.
-                    </p>
-                    <p>My professional journey has been enriching, and I have stood out for my proficiency in languages like PHP, Python, and JavaScript. My expertise spans both the Back-End realm, where I create robust structures that drive application functionality, and the Fullstack domain, allowing me to cover all layers of development.</p>
-                    <p>During a period of 1 year and 8 months, I had the valuable opportunity to intern at the esteemed institution SESAP. During this time, I immersed myself in challenging projects that expanded my hands-on experience. My contribution was noteworthy, especially in the utilization of tools such as PHP and Laravel, enabling the construction of efficient and highly functional systems. Additionally, my proficiency in JavaScript and Bootstrap facilitated the creation of dynamic and intuitive interfaces, enhancing user experience.</p>
-                    <p>My relentless pursuit of excellence also led me to explore technologies like AJAX and APIs, strengthening my ability to craft sophisticated interactions between the front-end and back-end of applications. Furthermore, my prowess in data modeling was showcased through effective use of the POWER BI tool, providing valuable insights through data visualization.</p>
-                    <p>I am committed to continuing to grow as a professional and contributing to projects that demand creative and technically sound solutions. My journey thus far is only the beginning, and I am eager to take on new challenges and explore emerging technologies in the ever-evolving world of technology.</p>
-                    <p>Welcome to my portfolio, a reflection of my dedication to excellence and passion for systems development.</p>
-                    <a class="btn-rounded btn btn-outline-primary mt-4" href="assets/pdf/flavio.pdf" download target="_blank">Download CV</a>
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
+        <!-- Seção sobre -->
+        <section class="section pt-0" id="about">
+            <!-- container -->
+            <div class="container text-center">
+                <!-- wrapper sobre -->
+                <div class="about">
+                    <div class="about-img-holder">
+                        <img src="assets/imgs/flavio.png" class="about-img" alt="Flávio Policarpo">
+                    </div>
+                    <div class="about-caption">
+                        <p class="section-subtitle">Quem Sou Eu?</p>
+                        <h2 class="section-title mb-3">Sobre Mim</h2>
+                        <p>
+                            Olá, sou Flávio Policarpo, formado em Análise e Desenvolvimento de Sistemas pela renomada
+                            instituição IFRN. Com mais de 3 anos de experiência, sou especializado em desenvolvimento
+                            Full-Stack, criando soluções robustas e escaláveis para aplicativos web e microserviços.
+                        </p>
+                        <p>
+                            Minha expertise abrange várias tecnologias, como PHP, Laravel, Node.js e NestJS. Tenho um
+                            forte histórico em desenvolvimento de aplicações web avançadas, implementação de
+                            microserviços e otimização de sistemas para desempenho e escalabilidade. Minha experiência
+                            inclui a construção de sistemas com ferramentas como ElasticSearch e AWS CloudWatch para
+                            visualização e monitoramento de logs.
+                        </p>
+                        <p>
+                            Durante minha jornada profissional, entreguei soluções com sucesso para diversos desafios.
+                            Por exemplo, na SESAP, atuei como Estagiário de Desenvolvimento Web por 1 ano e 8 meses,
+                            contribuindo para projetos como SABDP, SISTEL e NOTIFICA, que otimizaram processos internos
+                            e aumentaram a confiabilidade do sistema. Mais tarde, na Zapisp, desempenhei um papel
+                            importante como Desenvolvedor Full-Stack, implementando microserviços, criando ambientes
+                            Dockerizados e construindo pipelines CI/CD, tudo enquanto utilizava tecnologias de ponta.
+                        </p>
+                        <p>
+                            Minha busca incansável pela excelência também me levou a explorar modelagem de dados com
+                            Power BI, APIs para interações sofisticadas entre front-end e back-end, e aprendizado
+                            contínuo através de cursos avançados em Node.js Microservices e VueJS. Essa base me
+                            capacitou a enfrentar desafios diversos no cenário tecnológico em constante evolução.
+                        </p>
+                        <p>
+                            Bem-vindo ao meu portfólio, onde mostro minha dedicação ao desenvolvimento de software e
+                            minha paixão por entregar soluções inovadoras e tecnicamente sólidas. Fique à vontade para
+                            explorar meu trabalho e baixar meu CV abaixo.
+                        </p>
+                        <a class="btn-rounded btn btn-outline-primary mt-4" href="assets/word/curriculo_flavio.docx"
+                            download target="_blank">Baixar CV</a>
+                    </div>
+                </div><!-- Fim do wrapper sobre -->
+            </div><!-- Fim do container -->
+        </section><!-- Fim da seção sobre -->
 
-    <!-- service section -->
-    <section class="section" id="skills">
-        <div class="container text-center">
-            <h6 class="section-title mb-6">Skills</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/php.png" alt="PHP Icon" class="icon">
-                            <h6 class="title">PHP</h6>
-                            <p class="subtitle">Proficient in PHP, a versatile scripting language for web development.</p>
+        <!-- Seção de habilidades -->
+        <section class="section" id="skills">
+            <div class="container text-center">
+                <h6 class="section-title mb-6">Habilidades</h6>
+                <!-- linha -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/php.png" alt="Ícone PHP" class="icon">
+                                <h6 class="title">PHP</h6>
+                                <p class="subtitle">Proficiência em PHP, uma linguagem de script versátil para
+                                    desenvolvimento web.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/laravel.png" alt="Laravel Icon" class="icon">
-                            <h6 class="title">Laravel</h6>
-                            <p class="subtitle">Experienced in Laravel, a popular PHP framework for building robust web applications.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/laravel.png" alt="Ícone Laravel" class="icon">
+                                <h6 class="title">Laravel</h6>
+                                <p class="subtitle">Experiência com Laravel, um popular framework PHP para construir
+                                    aplicações web robustas.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/python.png" alt="Python Icon" class="icon">
-                            <h6 class="title">Python</h6>
-                            <p class="subtitle">Skilled in Python, a versatile programming language used for various applications.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/python.png" alt="Ícone Python" class="icon">
+                                <h6 class="title">Python</h6>
+                                <p class="subtitle">Habilidade em Python, uma linguagem de programação versátil
+                                    utilizada para diversas aplicações.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/dj.png" alt="Django Icon" class="icon">
-                            <h6 class="title">Django</h6>
-                            <p class="subtitle">Skilled in Django, a high-level Python web framework for rapid development and clean, pragmatic design.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/dj.png" alt="Ícone Django" class="icon">
+                                <h6 class="title">Django</h6>
+                                <p class="subtitle">Experiência com Django, um framework Python de alto nível para
+                                    desenvolvimento rápido e design limpo e pragmático.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/js.png" alt="JavaScript Icon" class="icon">
-                            <h6 class="title">JavaScript</h6>
-                            <p class="subtitle">Proficient in JavaScript, a key technology for interactive and dynamic web development.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/js.png" alt="Ícone JavaScript" class="icon">
+                                <h6 class="title">JavaScript</h6>
+                                <p class="subtitle">Proficiência em JavaScript, uma tecnologia chave para o
+                                    desenvolvimento web dinâmico e interativo.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/ajax.png" alt="Ajax Icon" class="icon">
-                            <h6 class="title">Ajax</h6>
-                            <p class="subtitle">Experienced in using Ajax to create seamless, asynchronous web interactions.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/nest.png" alt="Ícone Nest.js" class="icon">
+                                <h6 class="title">Nest.js</h6>
+                                <p class="subtitle">Criação de microserviços com Nest.js.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pw.png" alt="Power BI Icon" class="icon">
-                            <h6 class="title">Power BI</h6>
-                            <p class="subtitle">Skilled in Power BI, a powerful business analytics tool for data visualization.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/next.jpg" alt="Ícone Next.js" class="icon">
+                                <h6 class="title">Next.js</h6>
+                                <p class="subtitle">Criação de interfaces com Next.js.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/bz.png" alt="Bizagi Icon" class="icon">
-                            <h6 class="title">Bizagi</h6>
-                            <p class="subtitle">Familiar with Bizagi, a platform for business process modeling and automation.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/aws.webp" alt="Amazon Web Services (AWS)" class="icon">
+                                <h6 class="title">Amazon Web Services (AWS)</h6>
+                                <p class="subtitle">Amazon EC2, S3, Amazon CloudWatch, Amazon SQS.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of skills section -->
-    
+                </div><!-- Fim da linha -->
+            </div><!-- Fim do container -->
+        </section><!-- Fim da seção de habilidades -->
+    </section>
+
+    <section class="en d-none">
+
+        <!-- Page Navbar -->
+        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+            <div class="container">
+                <a class="logo" href="#">Blog - Portfolio</a>
+                <ul class="nav">
+                    <li class="item">
+                        <a class="link" href="#home">Home</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#about">About</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#contact">Contact</a>
+                    </li>
+                    <li class="item">
+                        <a  class="link" onclick="mudarIdioma('br')" href="#br">Português</a>
+                    </li>
+                    <li class="item">
+                        <a  class="link" onclick="mudarIdioma('en')" href="#en">Inglês</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </div>
+        </nav><!-- End of Page Navbar -->
+
+        <!-- page header -->
+        <header id="home" class="header">
+            <div class="overlay"></div>
+            <div class="header-content container">
+                <h1 class="header-title">
+                    <span class="up">HI!</span>
+                    <span class="down">I am Flávio Policarpo</span>
+                    <span class="up">Systems Analyst and Developer</span>
+                </h1>
+                <p class="header-subtitle"></p>
+
+                <a href="https://github.com/FlavioCandidoSilva" class="btn btn-primary">Visit My Works</a>
+            </div>
+        </header><!-- end of page header -->
+
+        <!-- about section -->
+        <section class="section pt-0" id="about">
+            <!-- container -->
+            <div class="container text-center">
+                <!-- about wrapper -->
+                <div class="about">
+                    <div class="about-img-holder">
+                        <img src="assets/imgs/flavio.png" class="about-img" alt="Flávio policarpo">
+                    </div>
+                    <div class="about-caption">
+                        <p class="section-subtitle">Who Am I?</p>
+                        <h2 class="section-title mb-3">About Me</h2>
+                        <p>
+                            Hello, I'm Flávio Policarpo, a professional graduated in Analysis and Systems Development
+                            from the renowned institution IFRN. With over 3 years of experience, I specialize in
+                            Full-Stack development, creating robust and scalable solutions for web applications and
+                            microservices.
+                        </p>
+                        <p>
+                            My expertise spans several technologies such as PHP, Laravel, Node.js, and NestJS. I have a
+                            strong background in developing advanced web applications, implementing microservices, and
+                            optimizing systems for performance and scalability. My experience includes building systems
+                            with tools like ElasticSearch and AWS CloudWatch for log visualization and monitoring.
+                        </p>
+                        <p>
+                            During my professional journey, I have successfully delivered solutions for various
+                            challenges. For instance, at SESAP, I worked as a Web Development Intern for 1 year and 8
+                            months, contributing to projects like SABDP, SISTEL, and NOTIFICA, which streamlined
+                            internal processes and enhanced system reliability. Later, at Zapisp, I played a key role as
+                            a Full-Stack Developer, implementing microservices, creating Dockerized environments, and
+                            building CI/CD pipelines, all while leveraging cutting-edge technologies.
+                        </p>
+                        <p>
+                            My relentless pursuit of excellence has also led me to explore data modeling with Power BI,
+                            APIs for sophisticated front-end and back-end interactions, and continuous learning through
+                            advanced courses in Node.js Microservices and VueJS. This foundation has equipped me to
+                            tackle diverse challenges in the ever-evolving tech landscape.
+                        </p>
+                        <p>
+                            Welcome to my portfolio, where I showcase my dedication to software development and my
+                            passion for delivering innovative, technically sound solutions. Feel free to explore my work
+                            and download my CV below.
+                        </p>
+                        <a class="btn-rounded btn btn-outline-primary mt-4" href="assets/word/curriculo_flavio.docx"
+                            download target="_blank">Download CV</a>
+                    </div>
+
+                </div><!-- end of about wrapper -->
+            </div><!-- end of container -->
+        </section> <!-- end of about section -->
+
+        <!-- service section -->
+        <section class="section" id="skills">
+            <div class="container text-center">
+                <h6 class="section-title mb-6">Skills</h6>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/php.png" alt="PHP Icon" class="icon">
+                                <h6 class="title">PHP</h6>
+                                <p class="subtitle">Proficient in PHP, a versatile scripting language for web
+                                    development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/laravel.png" alt="Laravel Icon" class="icon">
+                                <h6 class="title">Laravel</h6>
+                                <p class="subtitle">Experienced in Laravel, a popular PHP framework for building robust
+                                    web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/python.png" alt="Python Icon" class="icon">
+                                <h6 class="title">Python</h6>
+                                <p class="subtitle">Skilled in Python, a versatile programming language used for various
+                                    applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/dj.png" alt="Django Icon" class="icon">
+                                <h6 class="title">Django</h6>
+                                <p class="subtitle">Skilled in Django, a high-level Python web framework for rapid
+                                    development and clean, pragmatic design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/js.png" alt="JavaScript Icon" class="icon">
+                                <h6 class="title">JavaScript</h6>
+                                <p class="subtitle">Proficient in JavaScript, a key technology for interactive and
+                                    dynamic web development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/nest.png" alt="Nest js" class="icon">
+                                <h6 class="title">Nest js</h6>
+                                <p class="subtitle">Creating microservices with Nest .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/next.jpg" alt="Next js" class="icon">
+                                <h6 class="title">Next js</h6>
+                                <p class="subtitle">Creating interfaces with Next .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="body">
+                                <img src="assets/imgs/aws.webp" alt="Amazon Web Services (AWS)" class="icon">
+                                <h6 class="title">Amazon Web Services (AWS)</h6>
+                                <p class="subtitle">Amazon EC2,S3,Amazon CloudWatch,Amazon SQS .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of row -->
+            </div>
+        </section>
+    </section>
+
+
+
 
 
 
@@ -172,32 +394,32 @@
         <div class="container text-center text-sm-left">
             <!-- row -->
             <div class="row align-items-center">
-                
+
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of section -->
 
     <!-- testimonial section -->
-   
+
 
     <!-- contact section -->
-   <!-- contact.html -->
+    <!-- contact.html -->
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">
             <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    >Flávio cândido</a> 
+                <script>document.write(new Date().getFullYear())</script> &copy; <a>Flávio cândido</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto" id="contact">
                 <a href="https://github.com/FlavioCandidoSilva"><i class="ti-github"></i></a>
                 <a href="https://www.instagram.com/flaviopolicarpo__/"><i class="ti-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/fl%C3%A1vio-c%C3%A2ndido-530b43223/"><i class="ti-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/fl%C3%A1vio-c%C3%A2ndido-530b43223/"><i
+                        class="ti-linkedin"></i></a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
-    
+
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -207,6 +429,19 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        function mudarIdioma(idioma) {
+            if (idioma == 'br') {
+    
+                document.querySelector('.br').classList.remove('d-none');
+                document.querySelector('.en').classList.add('d-none');
+            } else {
+                document.querySelector('.br').classList.add('d-none');
+                document.querySelector('.en').classList.remove('d-none');
+            }
+        }
+    </script>
 
 </body>
 
